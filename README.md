@@ -20,17 +20,17 @@ BajaClouds es una aplicación web desarrollada con **Django** que busca emprende
 - [Gunicorn](https://gunicorn.org/)
 - [Nginx](https://nginx.org/)
 - [SQLite / PostgreSQL](https://www.postgresql.org/)
-- [TailwindCSS](https://tailwindcss.com/) (si lo usas para estilos)
+- [TailwindCSS](https://tailwindcss.com/) 
 
 ---
 
 ## 📂 Estructura del proyecto
 BajaClouds/
-├── bajaclouds/ # Aplicación principal
-├── home/ # Pagina Inicio
-├── static/ # Archivos estáticos (CSS, JS, imágenes)
-├── media/ # Archivos subidos por usuarios
-├── templates/ # Plantillas HTML
-├── manage.py # Script de gestión de Django
-├── requirements.txt # Dependencias del proyecto
-└── .env.example # Variables de entorno (ejemplo)
+  bajaclouds/ # Aplicación principal
+  home/ # Pagina Inicio
+  static/ # Archivos estáticos (CSS, JS, imágenes)
+  media/ # Archivos subidos por usuarios
+  templates/ # Plantillas HTML
+  manage.py # Script de gestión de Django
+  requirements.txt # Dependencias del proyecto
+  .env # Variables de entorno 
