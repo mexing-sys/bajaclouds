@@ -6,12 +6,12 @@ BajaClouds es una aplicación web desarrollada con **Django** que busca emprende
 
 ## 🚀 Características principales
 - Backend en *Django + Gunicorn*.
-- Gestión de configuración segura mediante 
+- Gestión de configuración segura (SSL,ENV,etc) 
 - Base de datos **SQLite (local)** y soporte para **PostgreSQL/MySQL** en producción.
 - Panel de administración personalizado.
 - Archivos estáticos y media configurados.
-- Despliegue pensado para **Ubuntu Server + Nginx**.
-- Cloude Hosting  Proxmox 9.0.5
+- Despliegue sobre  **Ubuntu Server + Nginx**.
+- Cloude Hosting  Proxmox 9.0.5 + CloudFlare Tunnel
 ---
 
 ## 🛠️ Tecnologías utilizadas
