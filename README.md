@@ -11,7 +11,7 @@ BajaClouds es una aplicación web desarrollada con **Django** que busca emprende
 - Panel de administración personalizado.
 - Archivos estáticos y media configurados.
 - Despliegue pensado para **Ubuntu Server + Nginx**.
-
+- Cloude Hosting  Proxmox 9.0.5
 ---
 
 ## 🛠️ Tecnologías utilizadas
