@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page_data.title %}{{ page_data.title }}{% else %}BAJA CLOUDS{% endif %} - Coming Soon</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAA=">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <!-- Imagen de fondo personalizada -->
+    {% if page_data.background_image %}
+    <div class="custom-background" style="background-image: url('{{ page_data.background_image }}');"></div>
+    {% endif %}
+
+    <!-- Fondo con grid -->
+    <div class="grid-background"></div>
+
+    <!-- Partículas animadas iniciales -->
+    {% for i in "123456789" %}
+    <div class="particle" style="left: {{ forloop.counter0 }}0%; animation-delay: {{ forloop.counter0 }}s;">
+    </div>
+    {% endfor %}
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- ON AIR -->
+        <div class="on-air">
+            {% if page_data.on_air_text %}{{ page_data.on_air_text|upper }}{% else %}ON AIR{% endif %}
+        </div>
+        <div class="main-logo">
+                <img src="{{ page_data.logo }}" alt="Logo Baja Clouds" class="circle-logo-container" 
+                    onerror="this.style.display='none';">
+        </div>
+        <div class="coming-soon">
+            {% if page_data.subtitle %}{{ page_data.subtitle|lower }}{% else %}coming soon{% endif %}
+        </div>
+    </div>
+
+    <!-- JS para partículas y debug -->
+    <script src="{% static 'js/index.js' %}"> </script>
+</body>
+</html>
