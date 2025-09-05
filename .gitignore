@@ -1,44 +1,57 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*$py.class
 *.so
-*.egg
-*.egg-info/
-dist/
+.Python
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
 .eggs/
-
-# Virtual environments
-venv/
-.env/
-env/
-ENV/
-.venv/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
 # Django
-*.log
-*.pot
-*.pyc
-*.pyo
-*.pyd
-*.sqlite3
-*db.sqlite3
-*old_db.sqlite3
-media/
-staticfiles/
+# *.log
+# local_settings.py
+# db.sqlite3
+# db.sqlite3-journal
+# media
 
-# IDEs / Editors
+# Entorno virtual
+venv/
+env/
+ENV/
+
+# Entorno de desarrollo
+.env
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
+*.swp
+*.swo
+.vs
 
-# OS
+# Archivos del sistema
 .DS_Store
 Thumbs.db
 
-# dotenv
-.env
-*.env
+# Archivos generados por el proyecto
+static/admin/
+static/collected/
+staticfiles/
+
+# Archivos de caché
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
